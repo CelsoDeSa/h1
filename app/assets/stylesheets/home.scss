@@ -42,8 +42,56 @@
 }
 
 .image-1 img {
-    height: 30%;
-    width: 60%;
+    height: 350px;
+    width: 600px;
+    transition: all 0.4s ease-in-out;
+    transform: skew(-3deg, -3deg);
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 2px 2px 8px 5px black;
+    box-shadow: 2px 2px 20px 5px black;
+}
+
+.image-1 img:hover {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    transform: skew(0, 0);
+}
+
+/*  */
+#cursor {
+  color: #ccb900;
+}
+
+.blink {
+  -webkit-animation: 1.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 1.5s linear infinite condemned_blink_effect;
+}
+
+.blockcursor {
+  
+}
+  
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect { 
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+  
+@keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
 }
