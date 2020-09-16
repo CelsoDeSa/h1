@@ -33,6 +33,10 @@
     text-shadow: 0 2px 4px black;
 }
 
+h1 #invisible {
+  opacity: 0;
+}
+
 .hero .image-1 {
     position: absolute;
     width: 45vw;
@@ -65,10 +69,6 @@
 .blink {
   -webkit-animation: 1.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
   animation: 1.5s linear infinite condemned_blink_effect;
-}
-
-.blockcursor {
-  
 }
   
 /* for Safari 4.0 - 8.0 */
