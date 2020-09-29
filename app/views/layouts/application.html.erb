@@ -13,12 +13,24 @@
   <body>
     <header>
       <nav>
-        <%= image_tag('h1-logo-(v3-3-1-svg)') %>
+        <a title="header.one" href="/">
+          <%= image_tag('h1-logo-(v3-3-1-svg)') %> 
+        </a>
+
+        
+        <ul class="menu">
+          <li class="menu-items active"><a href="/">Home</a></li>
+          <li class="menu-items"><a href="#about">About</a></li>
+        </ul>
       </nav>
     </header>    
 
     <%= yield %>
 
-    <footer></footer>
+    <footer>
+    <div>
+      <p class="footer">© <%= Time.now.year %> HEADER ONE | CNPJ 38.478.073/0001-66</p>
+    </div>
+    </footer>
   </body>
 </html>
