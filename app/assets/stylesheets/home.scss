@@ -3,94 +3,130 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 section {
-	min-height: 50vh;
-  width: 100vw;	
+	min-height: 100vh;
+  width: 100vw;
 }
 
-section#hero { 
-    background-color: #00a300;
-    background-image: url("data:image/svg+xml,%3Csvg width='50' height='10' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23bfbfbf' fill-opacity='0.20' fill-rule='evenodd'/%3E%3C/svg%3E");
+section#hero {
+	background-color: #00a300;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='10' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23bfbfbf' fill-opacity='0.20' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 section#hero .text {
-    position: absolute;
-    text-align: right;
-    width: 45vw;
-    height: 100%;
-    padding: 0 0 1% 4%;
+	position: absolute;
+	text-align: right;
+	width: 45vw;
+	top: 15%;
+	padding: 0 0 1% 4%;
 }
 
-section#hero h1 { 
-    overflow-wrap: normal; 
-    font-size: 4rem;
-    color: white;
-    text-shadow: 0 2px 4px black;
+section#hero h1 {
+	overflow-wrap: normal;
+	font-size: 6rem;
+	color: white;
+	text-shadow: 0 2px 4px black;
 }
 
 h1 #invisible {
-  opacity: 0;
+	opacity: 0;
+}
+
+h1 #selling-points {
+	color: whitesmoke;
 }
 
 section#hero .image-1 {
-    position: absolute;
-    width: 45vw;
-    height: 100%;
-    padding: 3% 0 0 0;
-    right: 0;
+	position: absolute;
+	width: 45vw;
+	top: 20%;
+	padding: 3% 0 0 0;
+	right: 0;
 }
 
 .image-1 img {
-    height: 350px;
-    width: 600px;
-    transition: all 0.4s ease-in-out;
-    transform: skew(-3deg, -3deg);
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px 5px black;
+	height: 400px;
+	width: 650px;
+	transition: all 0.4s ease-in-out;
+	transform: skew(-3deg, -3deg);
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 20px 5px black;
 }
 
 .image-1 img:hover {
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    transform: skew(0, 0);
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+	transform: skew(0, 0);
 }
 
 /*  */
 #cursor {
-  color: #ccb900;
+	color: #ccb900;
 }
 
 .blink {
-  -webkit-animation: 1.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
-  animation: 1.5s linear infinite condemned_blink_effect;
+	-webkit-animation: 1.5s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+	animation: 1.5s linear infinite condemned_blink_effect;
 }
-  
+
 /* for Safari 4.0 - 8.0 */
-@-webkit-keyframes condemned_blink_effect { 
-    0% {
-      visibility: hidden;
-    }
-    50% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
+@-webkit-keyframes condemned_blink_effect {
+	0% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
 }
-  
+
 @keyframes condemned_blink_effect {
-    0% {
-      visibility: hidden;
-    }
-    50% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
+	0% {
+		visibility: hidden;
+	}
+	50% {
+		visibility: hidden;
+	}
+	100% {
+		visibility: visible;
+	}
 }
 
 section#about h2 {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1600px) {
+  section#hero h1 {
+    font-size: 5rem;
+  }
+
+  .image-1 img {
+    height: 300px;
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  section#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#hero .text {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    padding: 0;
+  }
+  
+  section#hero .image-1 {
+    position: relative;
+    padding: 0;
+  }
 }
